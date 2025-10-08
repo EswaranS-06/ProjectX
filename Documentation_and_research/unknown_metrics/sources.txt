@@ -1,1 +1,8 @@
-
+Common Sources for Unknown Anomaly Detection
+* Network Traffic Logs: Packet captures, flow data (e.g., NetFlow, sFlow), and firewall logs reveal communication patterns, unusual protocol usage, abnormal connection attempts, or data exfiltration behaviors.
+* System and Endpoint Logs: Operating system logs, audit logs, application logs, and endpoint detection tool outputs provide information on process execution, file access, privilege escalation, login activity, and configuration changes.
+* Authentication and Access Logs: Logs from identity management systems, multi-factor authentication, and directory services (e.g., Active Directory) track user login times, geographic locations, failed login attempts, and anomalous access behaviors.
+* Security Device Logs: Intrusion detection/prevention systems (IDS/IPS), antivirus, and threat intelligence feeders offer signals that can be used alongside anomaly detection to identify unknown threats.
+* Cloud and Application Logs: Logs from cloud infrastructures, containers, SaaS applications, and web servers capture API calls, user actions, and changes in application behavior potentially indicating unknown infiltration or misuse.
+* Behavioral Telemetry: Data on user behavior analytics (UBA) and entity behavior analytics (EBA) aggregated from various systems provide a baseline for identifying deviations suggestive of insider threats or compromised accounts.
+* Configuration and Change Logs: Tracking configuration changes or system state alterations can identify suspicious or unauthorized modifications linked to unknown threats.
