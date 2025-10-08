@@ -1,0 +1,8 @@
+﻿Stage,Technology,Algorithm / Method,Reason / Benefit
+Log Ingestion,Fluent Bit + Kafka,Streaming ingestion,"Low-latency, fault-tolerant log delivery"
+Storage,Apache Cassandra,Time-series optimized NoSQL storage,"Scalable, fast querying for large log volumes"
+Feature Extraction,Stream processing jobs,"Sliding windows, session aggregation",Contextual features for ML inputs
+Anomaly Detection,Stream/Batch (Kafka + ML libs),"Isolation Forest (Batch), HST & ADWIN (Stream)","Scalable, adaptive for static and evolving detection"
+NLP Analysis,Batch processing,"Transformer embeddings, zero/few-shot NLP",Semantic understanding of textual logs
+Correlation & Scoring,Rule engines + ML,Kill-chain mapping + anomaly fusion,Link related events into meaningful alerts
+Visualization,Grafana + Power BI,Real-time dashboards + aggregated reports,Operational and strategic visibility
