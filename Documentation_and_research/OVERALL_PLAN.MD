@@ -65,42 +65,14 @@ The tool ingests logs and telemetry from:
 
 ***
 
-## 5. Implementation Example (only example) (Python Snippet)  
-```python
-from pyod.models.ecod import ECOD
-import pandas as pd
-
-# Load and preprocess logs (feature engineering + NLP embeddings)
-df = pd.read_csv("processed_logs.csv")
-features = df.drop(columns=["label", "message"])
-
-# Train anomaly detection model
-model = ECOD()
-model.fit(features)
-
-# Predict anomalies and calculate metrics
-scores = model.decision_function(features)
-alerts = scores > 0.5  # example threshold
-
-# Calculate unknown detection rate on rare anomaly labels
-def calculate_detection_rate(labels, alerts):
-    true_positives = (labels == 1) & (alerts == True)
-    return true_positives.sum() / labels.sum()
-
-detection_rate = calculate_detection_rate(df["label"], alerts)
-print(f"Unknown Threat Detection Rate: {detection_rate:.2f}")
-```
-
-***
-
-## 6. Project Flowchart  
+## 5. Project Flowchart  
 A detailed pipeline includes:  
 - Data ingestion → Parsing & Enrichment → Feature Engineering → ML/NLP modeling → Scoring & Unknown Metrics calculation → Alerting → Visualization → Analyst Feedback → Continuous Improvement  
 (Refer to the detailed flowchart provided).
 
 ***
 
-## 7. Challenges and Considerations  
+## 6. Challenges and Considerations  
 - Data quality and completeness impact detection accuracy.  
 - Balancing false positives and unknown threat detection is critical.  
 - Continuous model retraining required to adapt to evolving threats and concept drift.  
@@ -109,7 +81,7 @@ A detailed pipeline includes:
 
 ***
 
-## 8. Future Enhancements  
+## 7. Future Enhancements  
 - Incorporate streaming ML models for real-time adaptation.  
 - Enhance NLP modules for richer understanding of unstructured logs and threat reports.  
 - Integrate advanced SIEM correlation and playbook automation.  
@@ -117,7 +89,7 @@ A detailed pipeline includes:
 
 ***
 
-## 9. what we have!
+## 8. what we have!
 - apache casandra
 - apache kafka
 - Ubuntu 24.04 LTS
