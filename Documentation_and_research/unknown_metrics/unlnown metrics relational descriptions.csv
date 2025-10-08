@@ -1,0 +1,8 @@
+﻿Unknown Metric Type,Description,Detection Method Examples
+Unknown Threat Detection Rate,Detects novel threats not seen during training,"Anomaly detection, behavioral analysis"
+False Positive Rate on Unknowns,Measures alert noise for unknown inputs,"Threshold tuning, feedback-based refinement"
+Mean Time to Detect (MTTD),Average detection delay for unknown attacks,"Real-time scoring, alerting and triage"
+Detection Confidence Scores,Model certainty about unknown anomaly prediction,"Probabilistic models, uncertainty quantification"
+Novelty/Outlier Scores,Scores identifying how anomalous a sample is,"Isolation Forest, clustering distance scores"
+Alert Precision@k & Recall@k,Performance on top-k unknown alerts,Precision/Recall calculations on unknown clusters
+Drift and Stability Metrics,Monitors performance degradation due to environment shifts,"PSI, KS test for distribution changes"
