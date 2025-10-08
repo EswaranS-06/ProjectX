@@ -117,4 +117,13 @@ A detailed pipeline includes:
 
 ***
 
-This documentation captures the core activities, technologies, and metrics being developed for an AI-powered, unknown-aware SIEM tool capable of detecting emerging cybersecurity threats effectively. Further implementation details and testing will refine the system towards production readiness.
+## 9. what we have!
+- apache casandra
+- apache kafka
+- Ubuntu 24.04 LTS
+- fluentbit
+- grafana
+- POWER-BI
+```
+NOTE: PROVIDE MORE DETAINS IN! I MIGHT HAVE MISSED SOME DETAILS!
+```
