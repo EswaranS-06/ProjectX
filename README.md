@@ -1,4 +1,5 @@
-# Cyber Log Feature Engineering Module
+
+# Feature Engineering Logs Module (felog)
 
 A Python module for parsing cyber security logs and extracting ML-ready features.
 
@@ -12,19 +13,43 @@ A Python module for parsing cyber security logs and extracting ML-ready features
 - Extracts time-window aggregated features
 - Returns Pandas DataFrame for ML workflows
 - No intermediate file storage
+- Detailed logging capabilities
 
 ## Installation
 
+### Creating a Virtual Environment
+
+It's recommended to use a virtual environment to avoid conflicts with other Python packages:
+
 ```bash
+# Create a virtual environment
+python -m venv felog_env
+
+# Activate the virtual environment
+# On Windows:
+felog_env\Scripts\activate
+# On macOS/Linux:
+source felog_env/bin/activate
+```
+
+### Installing Requirements
+
+```bash
+# Install required packages
 pip install -r requirements.txt
 ```
+
+Required packages:
+- pandas>=1.3.0
+- numpy>=1.21.0
+- python-dateutil>=2.8.0
 
 ## Usage
 
 ### Basic Usage
 
 ```python
-from cyber_log_fe import LogParser, FeatureEngineering
+from felog import LogParser, FeatureEngineering
 
 # Parse logs from folder
 parser = LogParser()
@@ -81,7 +106,7 @@ The feature engineering module computes the following features per time window:
 
 ## Detailed Documentation
 
-For detailed documentation about the implementation, please see the [internal documentation](cyber_log_fe/README.md).
+For detailed documentation about the implementation, please see the [internal documentation](felog/README.md).
 
 ## Requirements
 
