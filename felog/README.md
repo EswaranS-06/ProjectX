@@ -18,7 +18,7 @@ This file initializes the package and makes the main classes available for impor
 
 This allows users to import the classes directly:
 ```python
-from cyber_log_fe import LogParser, FeatureEngineering
+from felog import LogParser, FeatureEngineering
 ```
 
 ### `parser.py`

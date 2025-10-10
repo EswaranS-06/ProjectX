@@ -4,3 +4,5 @@ __pycache__/
 .continue
 tmp
 .pytest_cache/
+.cassandra*
+.vscode

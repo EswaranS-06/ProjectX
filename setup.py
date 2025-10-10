@@ -7,7 +7,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
 
 setup(
-    name="cyber-log-fe",
+    name="felog",
     version="0.1.0",
     author="Cyber Security Team",
     description="A module for parsing cyber logs and extracting ML-ready features",
