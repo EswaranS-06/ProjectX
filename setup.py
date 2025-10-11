@@ -7,18 +7,32 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
 
 setup(
-    name="felog",
-    version="0.1.0",
-    author="Cyber Security Team",
-    description="A module for parsing cyber logs and extracting ML-ready features",
+    name="projectx",
+    version="1.0.0",
+    author="Project Team",
+    description="A module for parsing cyber logs and extracting ML-ready features with Cassandra and PostgreSQL connectivity",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=find_packages(),
     classifiers=[
-        "Programming Language :: Python :: 3",
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
     ],
-    python_requires=">=3.7",
+    python_requires=">=3.6",
     install_requires=requirements,
+    extras_require={
+        "dev": [
+            "pytest>=6.0",
+            "pytest-cov>=2.0",
+        ],
+    },
 )
