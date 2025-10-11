@@ -10,7 +10,7 @@ from model.autoencoder_torch import AutoencoderTrainer
 def main():
     # Step 1 — Parse logs & extract features
     p = LogFeaturePipeline(window_seconds=60, enable_logging=False)
-    p.ingest_from_file(br"logs\Linux_2k.log")
+    p.ingest_from_folder(br"logs")
 
     df_parsed = p.parse()
     print("Parsed DataFrame sample:")
